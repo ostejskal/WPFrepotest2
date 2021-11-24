@@ -8,6 +8,23 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="-209,-37,0,0">
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="683,98,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="623,134,0,0" VerticalAlignment="Top" MouseEnter="button2_MouseEnter" Visibility="Hidden"/>
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="430,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="109" Width="172">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.369"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
 
     </Grid>
 </Window>

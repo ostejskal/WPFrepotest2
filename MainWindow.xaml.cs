@@ -30,5 +30,10 @@ namespace WPFrepotest2
         {
             button.Name = "Button";
         }
+
+        private void button2_MouseEnter(object sender, MouseEventArgs e)
+        {
+            button2.Content = "Ahoj!";
+        }
     }
 }
